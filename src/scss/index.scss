@@ -1,0 +1,46 @@
+@import '~normalize.css';
+@import '~animate.css';
+@import '_variables';
+@import 'header';
+@import 'burger';
+@import 'main';
+@import 'catalog';
+@import 'footer';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #d1e4e8;
+  font-family: 'Montserrat';
+  color: $text-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: $color-white;
+    overflow-x: hidden !important;
+  }
+  .container {
+    padding: 15px;
+  }
+  .program-logo,
+  .burger-btn {
+    display: block !important;
+  }
+}

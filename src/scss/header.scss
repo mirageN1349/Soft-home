@@ -1,0 +1,132 @@
+.header {
+  color: $color-white;
+  background: $main-color;
+  box-shadow: 7px 8px 35px rgba(33, 150, 243, 0.3);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  .burger-btn {
+    display: none;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-title {
+    font-size: 30px;
+    font-weight: bold;
+    user-select: none;
+  }
+  &-nav {
+    display: flex;
+    align-items: center;
+  }
+  &-link {
+    font-size: 17px;
+    margin-right: 54px;
+    text-decoration: none;
+    color: $color-white;
+    &::after {
+      content: '';
+      display: block;
+      width: 0px;
+      height: 2px;
+      transition: 0.5s;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+        background: $color-white;
+      }
+    }
+  }
+  &-input {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 241px;
+    user-select: none;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 50px;
+    background: #fff url('../img/search.svg') no-repeat right;
+    color: $border-color;
+    background-position: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: initial;
+    background: none;
+    box-shadow: none;
+    .program-logo,
+    .program-logo img {
+      width: 38px;
+      height: 38px;
+      margin-right: 5px;
+      &:hover {
+        transform: none;
+      }
+    }
+    &-wrap {
+      justify-content: center;
+    }
+    &-nav {
+      position: fixed;
+      left: -100vw;
+      top: 0;
+      flex-direction: column;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background: #333;
+      transition: 0.4s;
+      z-index: 500;
+    }
+    &-nav.active {
+      left: 0;
+    }
+    &-link {
+      font-size: 26px;
+      margin-bottom: 40px;
+      margin-right: 0;
+      text-decoration: none;
+      color: $color-mobile;
+      &::after {
+        content: '';
+        display: none;
+        height: 0px;
+      }
+    }
+    &-title {
+      font-size: 20px;
+      color: $text-color;
+    }
+    &-input {
+      position: absolute;
+      right: 15px;
+      padding: 0;
+      width: 54px;
+      height: 50px;
+      border-radius: 14px;
+      background: $color-mobile url('../img/search.svg') no-repeat center;
+      color: $border-color;
+      transition: 0.4s;
+      &::placeholder {
+        opacity: 0;
+      }
+    }
+    &-input.active {
+      width: 90vw;
+      background-position: right;
+      background-position: 290px;
+      padding-left: 60px;
+      padding-right: 50px;
+    }
+  }
+}
