@@ -1,7 +1,11 @@
 .footer {
-  background: #d1e4e8;
+  background: $main-color;
   font-size: 16px;
   color: #a0a0a0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
   &-wrap {
     text-align: center;
     padding: 28px 0;
