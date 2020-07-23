@@ -110,6 +110,38 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .catalog {
+    margin-bottom: 0;
+    &-title {
+      margin-bottom: 70px;
+    }
+    &-program {
+      margin-bottom: 150px;
+    }
+    .program {
+      &-like {
+        position: absolute;
+        left: calc(50% - 35px);
+        top: -50px;
+
+        &__img {
+          width: 28px;
+          height: 28px;
+          margin-bottom: 5px;
+          fill: $main-color;
+        }
+        &__text {
+          font-family: 'Montserrat', 'Medium';
+          font-size: 14px;
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
 .zoom {
   $zoom-color: #158edd;
   color: $zoom-color;
