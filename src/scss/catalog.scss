@@ -46,6 +46,8 @@
       box-shadow: 2px 2px 15px rgba(110, 155, 162, 0.27);
       color: $main-color;
       transition: 0.4s;
+      outline: none;
+      border: none;
       cursor: pointer;
       &__img {
         width: 28px;

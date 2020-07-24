@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function likeClick(like, check) {
     const programs = ['skype', 'whatsapp', 'zoom']
     return function () {
+      if (check) like.disabled = true
+
       programs.forEach(program => {
         const currentLike = like.closest(`.${program}`)
         if (currentLike) {
@@ -56,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let counter = res.counter || 0
 
         if (check) {
+          console.log('request')
           storage.setItem(program, prevLikeState)
 
           if (prevLikeState === false) {
@@ -73,13 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
           counter,
           softName,
         }
-        putRequest(text, softName)
+
+        putRequest(text, softName, currentLike)
       })
   }
 
-  function putRequest(text, softName) {
+  function putRequest(text, softName, currentLike) {
     Like.create(text, softName).then(() => {
-      console.log('finish')
+      currentLike.disabled = false
     })
   }
 })
