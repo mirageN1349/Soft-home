@@ -44,18 +44,29 @@
       background: $color-white;
       border-radius: 50%;
       box-shadow: 2px 2px 15px rgba(110, 155, 162, 0.27);
+      color: $main-color;
+      transition: 0.4s;
+      cursor: pointer;
       &__img {
         width: 28px;
         height: 28px;
         margin-bottom: 5px;
         fill: $main-color;
+        transition: 0.4s;
+      }
+      &__img.active {
+        fill: tomato;
       }
       &__text {
         font-family: 'Montserrat', 'Medium';
         font-size: 14px;
-        color: $main-color;
       }
     }
+    &-like.active {
+      background: $border-color;
+      color: tomato;
+    }
+
     &-title {
       font-family: 'Roboto';
       font-weight: bold;
@@ -133,7 +144,6 @@
           width: 28px;
           height: 28px;
           margin-bottom: 5px;
-          fill: $main-color;
         }
         &__text {
           font-family: 'Montserrat', 'Medium';
@@ -148,24 +158,21 @@
 .zoom {
   $zoom-color: #158edd;
   color: $zoom-color;
-  .program-download__img,
-  .program-like__img {
+  .program-download__img {
     fill: $zoom-color;
   }
 }
 .skype {
   $skype-color: #2196f3;
   color: $skype-color;
-  .program-download__img,
-  .program-like__img {
+  .program-download__img {
     fill: $skype-color;
   }
 }
 .whatsapp {
   $whatsapp-color: #64b161;
   color: $whatsapp-color;
-  .program-download__img,
-  .program-like__img {
+  .program-download__img {
     fill: $whatsapp-color;
   }
 }

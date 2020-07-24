@@ -56,7 +56,7 @@
                 <svg class="program-like__img">
                   <use xlink:href="../src/img/sprite/sprite.svg#like"></use>
                 </svg>
-                <div class="program-like__text">120</div>
+                <div class="program-like__text"></div>
               </div>
               <div class="program-header">
                 <div class="program-logo">
@@ -96,7 +96,7 @@
                 <svg class="program-like__img">
                   <use xlink:href="../src/img/sprite/sprite.svg#like"></use>
                 </svg>
-                <div class="program-like__text">120</div>
+                <div class="program-like__text"></div>
               </div>
               <div class="program-header">
                 <div class="program-logo">
@@ -135,7 +135,7 @@
                 <svg class="program-like__img">
                   <use xlink:href="../src/img/sprite/sprite.svg#like"></use>
                 </svg>
-                <div class="program-like__text">120</div>
+                <div class="program-like__text"></div>
               </div>
               <div class="program-header">
                 <div class="program-logo">
@@ -197,5 +197,29 @@
         </div>
       </div>
     </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyDm8vpaBgXR5XAYGjZHMI3eC1UgOoNdk48',
+        authDomain: 'soft-zilla.firebaseapp.com',
+        databaseURL: 'https://soft-zilla.firebaseio.com',
+        projectId: 'soft-zilla',
+        storageBucket: 'soft-zilla.appspot.com',
+        messagingSenderId: '854464451608',
+        appId: '1:854464451608:web:82b57403014bc0dbf95f6d',
+        measurementId: 'G-MBVB57WMF3',
+      }
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig)
+      firebase.analytics()
+    </script>
   </body>
 </html>
