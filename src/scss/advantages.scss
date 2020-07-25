@@ -1,0 +1,27 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  &-block {
+    margin-left: 30px;
+    margin-right: 30px;
+
+    &__desc {
+      max-width: 173px;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages {
+    &-block {
+      margin-bottom: 35px;
+      &__desc {
+        margin-top: 8px;
+      }
+    }
+  }
+}
