@@ -20,7 +20,11 @@
     justify-content: center;
     &-block {
       margin-bottom: 35px;
+      padding: 15px 20px;
+      border-radius: 15px;
+      box-shadow: 5px 4px 4px rgba(150, 150, 150, 0.25);
       &__desc {
+        max-width: none;
         margin-top: 8px;
       }
     }
