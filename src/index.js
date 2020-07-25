@@ -51,22 +51,24 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(response => response.json())
       .then(res => {
         const prevLikeState = storage.getItem(program) || false
+        const currentImg = currentLike.querySelector('.program-like__img')
+        const likes = [currentLike, currentImg]
+
         prevLikeState
-          ? currentLike.classList.add('active')
-          : currentLike.classList.remove('active')
+          ? likes.forEach(node => node.classList.add('active'))
+          : likes.forEach(node => node.classList.remove('active'))
 
         let counter = res.counter || 0
 
         if (check) {
-          console.log('request')
           storage.setItem(program, prevLikeState)
 
           if (prevLikeState === false) {
-            currentLike.classList.add('active')
+            likes.forEach(node => node.classList.add('active'))
             counter = res.counter + 1
             storage.setItem(program, true)
           } else {
-            currentLike.classList.remove('active')
+            likes.forEach(node => node.classList.remove('active'))
             counter = res.counter - 1
             storage.setItem(program, false)
           }

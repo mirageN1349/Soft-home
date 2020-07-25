@@ -55,9 +55,10 @@
         margin-bottom: 5px;
         fill: $main-color;
         transition: 0.4s;
+        fill: #5fccdb;
       }
       &__img.active {
-        fill: tomato;
+        fill: $color-white;
       }
       &__text {
         font-family: 'Montserrat', 'Medium';
@@ -65,8 +66,8 @@
       }
     }
     &-like.active {
-      background: $border-color;
-      color: tomato;
+      background: #5fccdb;
+      color: $color-white;
     }
 
     &-title {
