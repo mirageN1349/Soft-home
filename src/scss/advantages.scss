@@ -17,14 +17,13 @@
 
 @media (max-width: 768px) {
   .advantages {
-    justify-content: center;
+    justify-content: space-evenly;
     &-block {
+      margin: 0;
       margin-bottom: 35px;
-      padding: 15px 20px;
       border-radius: 15px;
-      box-shadow: 5px 4px 4px rgba(150, 150, 150, 0.25);
       &__desc {
-        max-width: none;
+        max-width: 100px;
         margin-top: 8px;
       }
     }
