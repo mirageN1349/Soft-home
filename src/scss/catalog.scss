@@ -43,7 +43,7 @@
       align-items: center;
       background: $color-white;
       border-radius: 50%;
-      box-shadow: 2px 2px 15px rgba(110, 155, 162, 0.27);
+      box-shadow: 3px 4px 6px rgba(33, 150, 243, 0.15);
       color: $main-color;
       transition: 0.4s;
       outline: none;
@@ -57,6 +57,11 @@
         transition: 0.4s;
         fill: #5fccdb;
       }
+      &:hover {
+        .program-like__img {
+          transform: scale(1.2);
+        }
+      }
       &__img.active {
         fill: $color-white;
       }
@@ -68,6 +73,7 @@
     &-like.active {
       background: #5fccdb;
       color: $color-white;
+      filter: drop-shadow(3px 4px 6px rgba(95, 204, 219, 0.15));
     }
 
     &-title {
@@ -116,10 +122,22 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: 0.3s;
       &__img {
+        transition: 0.3s;
         margin-right: 15px;
         width: 40px;
         height: 40px;
+        &:hover {
+          transform: none;
+        }
+      }
+      &:hover {
+        color: $color-white;
+        background: #5fccdb;
+        .program-download__img {
+          fill: $color-white !important;
+        }
       }
     }
   }
