@@ -146,6 +146,7 @@
 @media (max-width: 768px) {
   .catalog {
     margin-bottom: 0;
+    margin-top: 0;
     &-title {
       margin-bottom: 70px;
     }
@@ -160,15 +161,20 @@
         position: absolute;
         left: calc(50% - 35px);
         top: -50px;
+        width: 80px;
+        border-radius: 5px;
+        height: 35px;
+        flex-direction: row;
 
         &__img {
           width: 28px;
           height: 28px;
           margin-bottom: 5px;
+          margin-right: 5px;
         }
         &__text {
           font-family: 'Montserrat', 'Medium';
-          font-size: 14px;
+          font-size: 16px;
         }
       }
     }
