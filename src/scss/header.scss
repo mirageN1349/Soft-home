@@ -14,15 +14,26 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+  }
+  &-logo {
+    height: 35px;
+    width: 35px;
+    fill: $color-white;
+    margin-right: 20px;
   }
   &-title {
     font-size: 30px;
-    font-weight: bold;
     user-select: none;
   }
   &-nav {
     display: flex;
     align-items: center;
+    margin-top: 4px;
   }
   &-link {
     font-size: 17px;
@@ -63,17 +74,15 @@
     position: initial;
     background: none;
     box-shadow: none;
-    .program-logo,
-    .program-logo img {
+
+    &-wrap {
+      justify-content: center;
+    }
+    &-logo {
+      fill: black;
       width: 38px;
       height: 38px;
       margin-right: 5px;
-      &:hover {
-        transform: none;
-      }
-    }
-    &-wrap {
-      justify-content: center;
     }
     &-nav {
       position: fixed;
