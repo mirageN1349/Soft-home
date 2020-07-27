@@ -25,6 +25,10 @@
     width: 35px;
     fill: $color-white;
     margin-right: 20px;
+    cursor: pointer;
+    &:hover {
+      fill: tomato;
+    }
   }
   &-title {
     font-size: 30px;
@@ -83,6 +87,9 @@
       width: 38px;
       height: 38px;
       margin-right: 5px;
+      &:hover {
+        fill: black;
+      }
     }
     &-nav {
       position: fixed;
