@@ -91,10 +91,11 @@
       flex-direction: column;
       justify-content: center;
       width: 100vw;
-      height: 100vh;
+      height: 100%;
       background: #333;
       transition: 0.4s;
       z-index: 500;
+      margin: 0;
     }
     &-nav.active {
       left: 0;
