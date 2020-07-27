@@ -133,9 +133,7 @@
         margin-right: 15px;
         width: 40px;
         height: 40px;
-        &:hover {
-          transform: none;
-        }
+        fill: #5fccdb;
       }
       &:hover {
         color: $color-white;
@@ -191,25 +189,16 @@
   .program-title {
     color: $zoom-color;
   }
-  .program-download__img {
-    fill: $zoom-color;
-  }
 }
 .skype {
   $skype-color: #2196f3;
   .program-title {
     color: $skype-color;
   }
-  .program-download__img {
-    fill: $skype-color;
-  }
 }
 .whatsapp {
   $whatsapp-color: #64b161;
   .program-title {
     color: $whatsapp-color;
-  }
-  .program-download__img {
-    fill: $whatsapp-color;
   }
 }
