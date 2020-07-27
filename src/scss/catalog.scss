@@ -30,6 +30,7 @@
       display: flex;
       align-items: center;
       margin-top: 15px;
+      text-decoration: none;
     }
     &-like {
       position: absolute;
@@ -86,6 +87,10 @@
         margin-right: 16px;
         width: 45px;
         height: 45px;
+        transition: 0.3s;
+      }
+      img:hover {
+        transform: scale(1.1);
       }
     }
     &-description,
@@ -183,21 +188,27 @@
 
 .zoom {
   $zoom-color: #158edd;
-  color: $zoom-color;
+  .program-title {
+    color: $zoom-color;
+  }
   .program-download__img {
     fill: $zoom-color;
   }
 }
 .skype {
   $skype-color: #2196f3;
-  color: $skype-color;
+  .program-title {
+    color: $skype-color;
+  }
   .program-download__img {
     fill: $skype-color;
   }
 }
 .whatsapp {
   $whatsapp-color: #64b161;
-  color: $whatsapp-color;
+  .program-title {
+    color: $whatsapp-color;
+  }
   .program-download__img {
     fill: $whatsapp-color;
   }

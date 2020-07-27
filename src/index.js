@@ -1,6 +1,10 @@
 import './scss/index.scss'
 import './components/burger/burger'
 import './components/like/like.state'
+import { firebaseConfig } from './components/firebase/firebase.config'
+
+firebase.initializeApp(firebaseConfig)
+firebase.analytics()
 
 document.addEventListener('DOMContentLoaded', () => {
   const input = document.querySelector('.header-input'),
