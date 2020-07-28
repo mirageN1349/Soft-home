@@ -1,4 +1,5 @@
 import './scss/index.scss'
+import './components/search/search.logic'
 import './components/burger/burger'
 import './components/like/like.state'
 import { firebaseConfig } from './components/firebase/firebase.config'

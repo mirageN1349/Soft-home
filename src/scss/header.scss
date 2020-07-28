@@ -60,6 +60,9 @@
     }
   }
   &-input {
+    &__wrap {
+      position: relative;
+    }
     border-radius: 20px;
     border: none;
     outline: none;
@@ -127,6 +130,7 @@
     &-input {
       position: absolute;
       right: 15px;
+      top: 27px;
       padding: 0;
       width: 54px;
       height: 50px;
@@ -134,6 +138,9 @@
       background: $color-mobile url('../img/search.svg') no-repeat center;
       color: $border-color;
       transition: 0.4s;
+      &__wrap {
+        position: initial;
+      }
       &::placeholder {
         opacity: 0;
       }
