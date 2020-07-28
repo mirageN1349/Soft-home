@@ -17,5 +17,6 @@ searchInput.addEventListener('click', () => {
 
 searchInput.addEventListener('input', e => {
   search.open()
+  searchInput.classList.add('active-input')
   search.searchElement(e)
 })
