@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function inputClick() {
       input.value = ''
-      input.classList.toggle('active-input')
+      input.classList.toggle('input-active')
     }
   }
 })
