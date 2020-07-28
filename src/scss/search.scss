@@ -4,7 +4,7 @@
     text-align: center;
     margin-top: 10px;
   }
-  &-none.hide {
+  &-none.hidden {
     display: none;
   }
   &-items {
@@ -43,13 +43,9 @@
   .search {
     position: absolute;
     right: 4%;
-    top: 10%;
+    top: 80px;
     &-items {
-      padding: 0;
-      margin: 0;
       background: $color-mobile;
-      border-radius: 15px;
-      padding: 10px 15px 20px 15px;
       width: 259px;
     }
 

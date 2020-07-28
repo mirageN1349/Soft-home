@@ -42,7 +42,7 @@ export class Search {
         el.classList.add('active')
         textEl.innerHTML = textEl.innerText
       })
-      this.deleteEl.classList.add('hide')
+      this.deleteEl.classList.add('hidden')
     }
   }
 
@@ -58,8 +58,8 @@ export class Search {
 
   #checkFindEl() {
     this.search.querySelector('.active')
-      ? this.deleteEl.classList.add('hide')
-      : this.deleteEl.classList.remove('hide')
+      ? this.deleteEl.classList.add('hidden')
+      : this.deleteEl.classList.remove('hidden')
   }
 
   getTextInEl(el) {
