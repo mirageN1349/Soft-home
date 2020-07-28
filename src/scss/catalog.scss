@@ -52,7 +52,7 @@
         margin-bottom: 5px;
         fill: $main-color;
         transition: 0.4s;
-        fill: #5fccdb;
+        fill: $color-button-icon;
       }
       &:hover {
         .program-like__img {
@@ -127,11 +127,11 @@
         margin-right: 15px;
         width: 40px;
         height: 40px;
-        fill: #5fccdb;
+        fill: $color-button-icon;
       }
       &:hover {
         color: $color-white;
-        background: #5fccdb;
+        background: $color-button-icon;
         .program-download__img {
           fill: $color-white;
         }

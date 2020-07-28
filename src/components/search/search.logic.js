@@ -1,6 +1,8 @@
 import { Search } from './Search'
+import { Navbar } from '../navbar/Navbar'
 
 const search = new Search('.search-items')
+const navbar = new Navbar('.header-nav')
 
 const searchInput = document.querySelector('.header-input')
 
@@ -11,6 +13,7 @@ document.addEventListener('click', e => {
 })
 
 searchInput.addEventListener('click', () => {
+  navbar.close()
   search.toggle()
   searchInput.classList.toggle('active-input')
 })

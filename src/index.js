@@ -2,6 +2,7 @@ import './scss/index.scss'
 import './components/search/search.logic'
 import './components/burger/burger'
 import './components/like/like.state'
+import './components/navbar/navbar.logic'
 import { firebaseConfig } from './components/firebase/firebase.config'
 
 firebase.initializeApp(firebaseConfig)
