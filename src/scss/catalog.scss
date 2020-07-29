@@ -67,7 +67,7 @@
       }
     }
     &-like.active {
-      background: #5fccdb;
+      background: $color-button-icon;
       color: $color-white;
       filter: drop-shadow(3px 4px 6px rgba(95, 204, 219, 0.15));
     }
